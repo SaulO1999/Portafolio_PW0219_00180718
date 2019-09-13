@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACIA,AAAA,GAAG,CAAA;EACC,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,QAAQ;EACnB,eAAe,EAAE,QAAQ;CAM5B;;AATD,AAII,GAJD,CAIC,EAAE,CAAA;EACE,gBAAgB,EATV,MAAM;EAUZ,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,KAAK;CACjB",
+    "sources": [
+        "../style.scss",
+        "../components/_nav.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

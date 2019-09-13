@@ -1,0 +1,15 @@
+$button-color:tomato;
+@mixin dimensiones {
+    
+}
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    .a{
+        background-color: $button-color;
+        margin: 2px;
+        padding: 0.5em;
+    }
+}
+

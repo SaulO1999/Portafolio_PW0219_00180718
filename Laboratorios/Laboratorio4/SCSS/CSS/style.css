@@ -1,0 +1,19 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .a {
+  background-color: tomato;
+  margin: 2px;
+  padding: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */
