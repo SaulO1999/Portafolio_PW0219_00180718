@@ -260,9 +260,56 @@ footer .social-links {
     
 }
 
+/*diseño para telefonos*/
+@media only screen and (min-width: 414px) {
+
+    .big-hero > .container li{
+         padding-bottom: 0px;
+         padding-left: 20px;
+         padding-right: 20px;
+         font-size: 50px;
+    }
+    
+    .big-hero > .social-links{
+        margin-top: 0px;
+    }
+
+
+    .big-hero > .container :last-child i{
+        font-size: 5rem;
+    }
+
+    .green-area >.container li{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about > .container img{
+        width: 150px;
+    }
+
+    .about > .container p{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    .contact-form{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 30px;    
+    }
+
+    footer > .social-links li{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 25px;
+    }
+}
+
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+    
     .post ul {
         list-style: none;
         display: flex;
@@ -301,26 +348,82 @@ footer .social-links {
         margin-top: 1em;
     }
 
+    .header ul{
+        padding: 0px;        
+    }
+    
+    .big-hero > .container a{
+        padding-bottom: 40px;
+    }
 
+    .header a:hover{
+        color: red;
+    }
 
-
-    /*TODO: FALTA CSS */
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 } 
+
+
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+    .container > .header li{
+        font-size: 20px;
+    }
+    .about > .container{
+        display: grid;
+        grid-template-rows: 10% 90%;
+        grid-template-columns: 50% 50%;
+    }
 
+    h2{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 
+    .contact{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 
+    .bio-info{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .contact-form :last-child{
+        width: 200px;
+    }
+    .green-area > .container li{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    
 }
 
 @media only screen and (min-width: 1440px) {
 
-    /*TODO: FALTA CSS */
+    
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+    }
+
+    .green-area > .container li{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
     }
 }
