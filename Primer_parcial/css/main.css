@@ -10,6 +10,7 @@
 }
 
 /* El estilo base para moviles */
+/*da color en le background, a la font le cambia el estilo, la posicion*/
 body {
     background-color: #112935;
     color: white;
@@ -17,7 +18,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
+/*crea el flex*/
 .header {
     display: flex;
     justify-content: space-between
@@ -36,7 +37,7 @@ p{
     padding: 1rem;
     line-height: 25px;
 }
-
+/*da estilo al logo*/
 .logo {
     width: 90px;
     margin: 1em;
@@ -60,17 +61,19 @@ p{
 }
 
 /* Big area */
+/*da width a la imagen*/
 .big-hero img {
     width: 150px;
 }
 
+/*caracteristicas del h2*/
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
-
+/*edita el p del big-hero*/
 .big-hero p {
     font-size: 0.7em;;
     color: #D7DEE6;
@@ -87,6 +90,7 @@ p{
     justify-content: center
 
 }
+/*Da estilo a los logos de redes sociales*/
 
 .social-links li a{
     color: #D7DEE6;
@@ -94,23 +98,24 @@ p{
     font-size: 2.5em;
 }
 
-
+/* background color del area verde*/
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/*creacion del container para poner los articles*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+/*edita el h2 publicacion*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 1em;
 }
-
+/*los .post editan las ul li article img h3 p de los articulos*/
 .post ul {
     list-style: none;
 }
@@ -152,7 +157,7 @@ p{
     line-height: 25px;
 }
 
-/* About */
+/* .about dan medidas a la 3ra secion y a su h2 */
 
 .about{
     margin-top: 2em;
@@ -165,10 +170,11 @@ p{
     margin: 2em;
 }
 
+/*.bio-info img cambia el width de la img */
 .bio-info img{
    width: 200px;
 }
-
+/*cambia caracteristicas del p*/
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -176,7 +182,7 @@ p{
     line-height: 25px;
     letter-spacing: 2px;
 }
-
+/*se le aplican al div donde se encuentra el formulario y le dan sus caracteristicas iniciales*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -206,13 +212,13 @@ p{
 ::-webkit-input-placeholder { 
     color: #D7DEE6; 
 } 
- 
+/*prefijos para que funcione  el placeholder en mozilla*/ 
 :-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
  
 ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
  
 :-ms-input-placeholder { color: #D7DEE6; }
-
+/*diseño del botton de submit*/
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -223,16 +229,16 @@ p{
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/*background color del footer*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
-
+/*edita los links sociales del footer*/
 footer .social-links {
     margin: 0;
 }
-
+/*los .menu posiciona el menu, le da estilo a sus li y les da referencia*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -262,43 +268,42 @@ footer .social-links {
 
 /*diseño para telefonos*/
 @media only screen and (min-width: 414px) {
-
+    /*cambia las posiciones de los links sociales y cambia el tamaño*/
     .big-hero > .container li{
          padding-bottom: 0px;
          padding-left: 20px;
          padding-right: 20px;
          font-size: 50px;
     }
-    
+    /*cambia el margin de los social links*/
     .big-hero > .social-links{
         margin-top: 0px;
     }
 
-
     .big-hero > .container :last-child i{
         font-size: 5rem;
     }
-
+    /*les da pading a los articulos*/
     .green-area >.container li{
         padding-left: 30px;
         padding-right: 30px;
     }
-
+    /*cambia la width de la img*/
     .about > .container img{
         width: 150px;
     }
-
+    /*da padding al p de .about*/
     .about > .container p{
         padding-right: 60px;
         padding-left: 60px;
     }
-
+    /*da padding a la form*/
     .contact-form{
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 30px;    
     }
-
+    /*da padding y cambia el tamaño de los iconos de redes sociales*/
     footer > .social-links li{
         padding-left: 10px;
         padding-right: 10px;
@@ -309,7 +314,7 @@ footer .social-links {
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-    
+   /*los .post cambian y dan estilo al cambiar de resolucion de pantalla*/  
     .post ul {
         list-style: none;
         display: flex;
@@ -324,12 +329,11 @@ footer .social-links {
         flex: 1 0 300px;
     }
 
-
+    /*al cambiar de resolucion la clase logo cambia para corresponda a la nueva pantalla*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
-
     .show-desktop {
         display: block;
     }
@@ -337,7 +341,7 @@ footer .social-links {
     .hide-desktop {
         display: none;
     }
-
+    /*le dan estilo al menu de tablet*/
     .menu {
         background-color: #112935; 
         position: static;
@@ -347,15 +351,15 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
-
+    /*entra el menu en el header*/
     .header ul{
         padding: 0px;        
     }
-    
+    /*cambia la posicion de la flecha*/
     .big-hero > .container a{
         padding-bottom: 40px;
     }
-
+    /*da color rojo al menu al pasar el cursor sobre el*/
     .header a:hover{
         color: red;
     }
@@ -369,40 +373,43 @@ footer .social-links {
 
 
 @media only screen and (min-width: 1024px) {
-
+    /*le da font-size de 20px al li del header*/
     .container > .header li{
         font-size: 20px;
     }
+
+    /*le da un grid al container de dos rows y do columns*/
     .about > .container{
         display: grid;
         grid-template-rows: 10% 90%;
         grid-template-columns: 50% 50%;
     }
-
+    /*posiciona el h2 en el grid*/
     h2{
         grid-row-start: 1;
         grid-row-end: 1;
         grid-column-start: 1;
         grid-column-end: 3;
     }
-
+    /*posiciona el elemento con clase container en el grid*/
     .contact{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
     }
-
+    /*posiciona el elemento con clase .bio-info en el grid*/
     .bio-info{
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 2;
         grid-row-end: 3;
     }
-
+    /*da width al boton submit*/
     .contact-form :last-child{
         width: 200px;
     }
+    /*les da un padding a los articles par verse bien en la resolucion 1024*/
     .green-area > .container li{
         padding-right: 0px;
         padding-left: 0px;
@@ -414,13 +421,13 @@ footer .social-links {
 
 @media only screen and (min-width: 1440px) {
 
-    
+    /*da medidas al container para funcionar con la mayor resolucion*/
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
-
+    /*da un padding a los articulos para que se vean mejor en esta resolucion*/
     .green-area > .container li{
         margin-left: 20px;
         margin-right: 20px;
