@@ -328,6 +328,10 @@ footer .social-links {
         margin: 1rem 2rem;
         flex: 1 0 300px;
     }
+    /*cambia el color de la flecha de azul a verde*/
+    .fas{
+        color: #0AC693;
+    }
 
     /*al cambiar de resolucion la clase logo cambia para corresponda a la nueva pantalla*/
     .logo {
