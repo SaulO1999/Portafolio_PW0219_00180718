@@ -1,0 +1,1 @@
+var radio = window.prompt("")
