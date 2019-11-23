@@ -4,6 +4,9 @@ var watchController = require('../controllers/WatchControllers');
 
 router.get('/:modelo', watchController.getOne);
 router.get('/', watchController.getAll);
+router.get('/', function(req, res, next) {
+    res.render('index', { title: 'hello' });
+  });
 
 router.post('/',watchController.register);
 router.put('/:modelo', watchController.updateWatch);
